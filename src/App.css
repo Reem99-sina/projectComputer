@@ -7,6 +7,17 @@
   pointer-events: none;
 }
 
+@font-face {
+  font-family: "regular";
+  /*Can be any text*/
+  src: local("IBM_Plex_Sans"),
+    url("./IBM_Plex_Sans\,Poppins\,Roboto//IBM_Plex_Sans/IBMPlexSans-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "regular" !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -32,7 +43,85 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.home {
+  background-image: url('../src/images/radek-grzybowski-66457-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: auto;
+}
+
+.card-title,
+.card-text {
+  position: absolute;
+  bottom: 100px;
+  left: 200px;
+}
+
+.card-text {
+  bottom: 80px;
+}
+
+#dropdown-basic {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: black;
+  border-color: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+
+#dropdown-primary {
+  background-color: #0d6efd;
+  border-color: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.w-1040 {
+  width: 80%;
+  border-bottom: 2px solid black;
+}
+
+
+
+.style-card-img {
+  width: 692px;
+  height: 200px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+}
+
+.inter {
+  background-color: white;
+  width: 736px;
+  height: 513px;
+  border-radius: 8px;
+}
+
+.header {
+  color: #008A45;
+  background-color: #EFFFF4;
+  border-radius: 8px;
 }

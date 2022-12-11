@@ -11,3 +11,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.disaber {
+  display: none;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  right: 0;
+}
+
+#disablie {
+  display: flex;
+}
+
+.stale-responce {
+  display: none;
+  justify-content: space-between;
+  background-color: transparent;
+  align-items: center;
+}
+
+#card {
+  width: 692px;
+  margin: 28px auto
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 790px) {
+  #specialCase {
+    display: none;
+  }
+
+  .disaber {
+    display: flex;
+  }
+
+  #disablie {
+    display: none;
+  }
+
+  .specialCase {
+    display: none;
+  }
+
+  .stale-responce {
+    display: flex;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  #card {
+    width: 100%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) {
+  ...
+} */
+
+/* // Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  ...
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+  ...
+} */
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+/* @media (min-width: 1400px) {
+  ...
+} */
